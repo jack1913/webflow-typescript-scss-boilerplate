@@ -5,6 +5,10 @@ dist
 # don't lint nyc coverage output
 coverage
 
+# webpack ignore
 webpack.common.js
 webpack.dev.js
 webpack.prod.js
+
+# config ingnore
+config.js
