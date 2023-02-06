@@ -56,7 +56,7 @@ Default `8080`. Feel free to change.
 
 ### Pages
 
-List of all pages you will be writing your code for. It's used by webpack to create separate entry points and chunks. For ex. we've `home: './src/home.ts`. If you want to add another one then you create a new entry `another: './scr/another.ts` - use `home.ts` as a template.
+List of all pages you will be writing your code for. It's used by webpack to create separate entry points and chunks. For ex. we've `home: './src/home.ts'`. If you want to add another one then you create a new entry `another: './scr/another.ts'` - please use `home.ts` as a template.
 
 ### Externals
 
@@ -102,7 +102,7 @@ npm run lint
 
 ## Build commands in VSCode
 
-Once you click `CMD + SHIT + B` on Mac or `CTR + SHIT + B` on Windows you can use prebuild task in VSCode.
+Once you click `CMD + SHIFT + B` on Mac or `CTR + SHIFT + B` on Windows you can use prebuild task in VSCode.
 
 ### Development
 
