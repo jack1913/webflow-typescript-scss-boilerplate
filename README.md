@@ -40,6 +40,11 @@ Basic setup that you can use for your [Webflow](https://webflow.com) website wit
 1. Now let's go back to VSCode and run `npm run serve` and enjoy developing as it was meant to.
 2. This boilerplate has HMR implemented, so once you make any changes to the code it will be auto-updated on your webflow site.
 
+### Production
+
+1. Use `npm build` and upload the files from the `./dist` folder onto your preferred CDN.
+2. Change imports in Webflow to those of your CDN.
+
 ---
 
 ## Configuration
