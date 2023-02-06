@@ -5,11 +5,12 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const webpack = require('webpack');
+const config = require('./config');
 
 module.exports = {
   entry: {
     // List of all your entry points (pages) you want to compile code for
-    home: './src/home.ts',
+    ...config.pages,
     // Runtime code for hot module replacement
     hot: 'webpack/hot/dev-server.js',
     // Dev server client for web socket transport, hot and live reload logic
@@ -58,7 +59,6 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: '/dist/',
     filename: '[name].js',
     clean: true,
   },

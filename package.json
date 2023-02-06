@@ -1,8 +1,12 @@
 {
   "name": "webflow-typescript-scss-boilerplate",
   "version": "1.1.0",
-  "author": "Jacek Pytlik",
+  "author": "Jacek Pytlik <jp@unrubble.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=9"
+  },
   "scripts": {
     "serve": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",

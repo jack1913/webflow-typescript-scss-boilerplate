@@ -1,24 +1,4 @@
-$base-transition-time: 0.25s;
-
-.splide {
-  .splide__slide {
-    > .hero-state {
-      transition: opacity $base-transition-time * 4 ease;
-      opacity: 0;
-    }
-
-    > img {
-      transition: box-shadow $base-transition-time ease;
-      box-shadow: none;
-    }
-
-    &.is-active {
-      > img {
-        box-shadow: 0 0 0 4px #000;
-      }
-      > .hero-state {
-        opacity: 1;
-      }
-    }
-  }
+body {
+  // Placeholder, feel free to delete
+  background: 'inherit';
 }

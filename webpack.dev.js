@@ -13,7 +13,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     client: {
-      webSocketURL: 'ws://localhost:8080/ws',
+      webSocketURL: `ws://localhost:${config.port || 8080}/ws`,
       webSocketTransport: 'ws',
       reconnect: 3,
     },
@@ -28,5 +28,8 @@ module.exports = merge(common, {
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
       'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
     },
+  },
+  infrastructureLogging: {
+    level: 'error',
   },
 });
