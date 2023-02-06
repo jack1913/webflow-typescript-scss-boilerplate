@@ -6,4 +6,4 @@ if (module.hot) {
   module.hot.accept();
 }
 
-console.log('Test message from hello.ts - Hello?!');
+console.log('Test message from hello.ts - Hello?');

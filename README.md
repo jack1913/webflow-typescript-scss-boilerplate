@@ -58,6 +58,10 @@ Default `8080`. Feel free to change.
 
 List of all pages you will be writing your code for. It's used by webpack to create separate entry points and chunks. For ex. we've `home: './src/home.ts`. If you want to add another one then you create a new entry `another: './scr/another.ts` - use `home.ts` as a template.
 
+### Externals
+
+List of all external dependencies that won't be bundled. By default `jQuery` is added.
+
 ---
 
 ## Scripts

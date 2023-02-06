@@ -11,4 +11,7 @@ module.exports = {
   pages: {
     home: './src/home.ts',
   },
+  externals: {
+    jquery: 'jQuery',
+  },
 };

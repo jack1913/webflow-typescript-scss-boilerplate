@@ -11,10 +11,6 @@ module.exports = {
   entry: {
     // List of all your entry points (pages) you want to compile code for
     ...config.pages,
-    // Runtime code for hot module replacement
-    hot: 'webpack/hot/dev-server.js',
-    // Dev server client for web socket transport, hot and live reload logic
-    client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
   },
   optimization: {
     usedExports: true,
@@ -63,6 +59,6 @@ module.exports = {
     clean: true,
   },
   externals: {
-    jquery: 'jQuery',
+    ...config.externals,
   },
 };
